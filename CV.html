@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 24px;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+        }
+        .header a{
+            color:currentColor;
+            text-decoration: none;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 200px; 
+            /* grid-template-rows: repeat(2,200px); */
+            grid-auto-rows: 300px;
+            /* justify-items: center;
+            align-items: center; */ 
+            justify-content: center;
+            gap:12px;
+        }
+
+        @media (min-width: 768px) {
+            .grid{
+                grid-template-columns: 200px 200px; 
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid{
+                grid-template-columns: 300px 300px 300px; 
+            }
+        }
+
+
+
+        .item{
+            background: #ddd;
+            /* height:100px; */
+        }
+        .item-01{
+            align-self: center;
+            justify-self: end;
+        }
+
+        .item img{
+            object-fit: cover;
+            width:100%;
+            height:100%;
+        }
+        
+        @media (min-width: 768px) {
+            .medium{
+                grid-column: span 2;
+            }
+            .big{
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+        }
+        
+        .header{
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            justify-content: space-between;
+            align-items: baseline;
+            background-color: rgba(255, 228, 196, 0.5);
+            padding:0 24px;
+            margin-bottom: 48px;
+            border-radius: 62px;
+            position: sticky;
+            top:0;
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>LD</h1>
+        <nav class="header-nav">
+            <a href="#">À  propos</a>
+        </nav>
+    </header>
+    <div class="grid">
+        <div class="item item-01">01</div>
+        <div class="item medium"><img src="https://picsum.photos/200/300" alt="placeholder"></div>
+        <div class="item"><img src="https://picsum.photos/210/300" alt="placeholder"></div>
+        <div class="item big"><img src="https://picsum.photos/200/310" alt="placeholder"></div>
+        <div class="item"><img src="https://picsum.photos/200/320" alt="placeholder"></div>
+        <div class="item"><img src="https://picsum.photos/400/300" alt="placeholder"></div>
+        <div class="item medium"><img src="https://picsum.photos/200/200" alt="placeholder"></div>
+        <div class="item"><img src="https://picsum.photos/200/500" alt="placeholder"></div>
+        <div class="item"><img src="https://picsum.photos/200/300" alt="placeholder"></div>
+        <div class="item"><img src="https://picsum.photos/500/300" alt="placeholder"></div>
+        <div class="item medium"><img src="https://picsum.photos/250/300" alt="placeholder"></div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+        <div class="item">05</div>
+        <div class="item">06</div>
+        <div class="item">07</div>
+        <div class="item">08</div>
+        <div class="item">09</div>
+        <div class="item">10</div>
+    </div>
+    
+</body>
+</html>

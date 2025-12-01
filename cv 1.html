@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CV — Prénom Nom</title>
+  <style>
+    :root {
+      --main-bg: #f5f7fa;
+      --sidebar-bg: #f6520b;
+      --text-light: #fff;
+      --text-dark: #000000;
+      --muted: #000000;
+      --accent: #f6520b;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--main-bg);
+      color: var(--text-dark);
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    .cv-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      max-width: 1000px;
+      width: 100%;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .sidebar {
+      background: var(--sidebar-bg);
+      color: var(--text-light);
+      padding: 30px 20px;
+    }
+    .sidebar h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .sidebar p { font-size: 14px; margin-bottom: 20px; }
+    .sidebar .section-title {
+      font-weight: bold;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      padding-bottom: 4px;
+    }
+    .sidebar ul {
+      list-style: none;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .main {
+      padding: 30px 40px;
+    }
+    .main h2 {
+      color: var(--accent);
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    .main section { margin-bottom: 25px; }
+    .job { margin-bottom: 15px; }
+    .job strong { display: block; font-size: 15px; }
+    .meta { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+    ul { margin-left: 18px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <aside class="sidebar">
+      <h1>Lise Dufour</h1>
+      <p>Étudiante</p>
+
+      <img src="DSCN07321.JPG"
+    width="300" height="400">
+
+      <div class="section-title">Contact</div>
+      <ul>
+        <li> liseddufour@icloud.com</li>
+        <li> 0750355880 </li>
+        <li>Paris, France</li>
+      </ul>
+
+      <div class="section-title">Langues</div>
+      <ul>
+        <li>Français</li>
+        <li>Anglais</li>
+      </ul>
+
+      <div class="section-title">Intérêts</div>
+      <ul>
+        <li>Céramique</li>
+        <li>Voyages</li>
+        <li>Mode</li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <section>
+        <h2>Profil</h2>
+        <p>Étudiante en design graphique à l'esad d'amiens, motivée, dynamique et autonome.</p>
+      </section>
+
+      <section>
+        <h2>Expérience</h2>
+        <div class="grid">
+        <p class="année">janv-mai 2023</p><p class="activité">femme de ménage pour particulier</p>
+        <p class="année">tous les janvier/septembre depuis 2022</p><p class="activité">manutention, accueil client, scénographie, assistante dans une galerie d'art</p>
+        <p class="année"> juin 2024-2025</p><p
+        class="activité"> barmaid en festival de musique </p>
+        <p class="année"> occasionnellement </p><p
+        class="activité">babysitting</p>
+
+
+    </div>
+      </section>
+
+      <section>
+        <h2>Formation</h2>
+        <div class="meta">double baccalauréat SES-Maths et esabac (italien) 2022 </div>
+        <div class="meta"> fac d'art Paris 8 2022-2023  </div>
+        <div class="meta"> prep'art paris 2023-2024  </div>
+        <div class="meta"> esad amiens 2024-2026  </div>
+      </section>
+      
+      <section>
+        <h2>Stage</h2>
+        <div class="meta">stage de 3ème en PMI (protection maternel et infantile)<div>
+        <div class="meta"> stage de céramique</div>
+      </section>
+    </main>
+  </div>
+
+
+</body>
+</html>
