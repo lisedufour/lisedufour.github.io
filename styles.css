@@ -208,3 +208,7 @@ h1{
 .p4{
     grid-row: span 2;
 }
+
+.header-nav{
+    justify-self: end;
+}
